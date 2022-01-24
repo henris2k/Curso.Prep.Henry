@@ -1,0 +1,24 @@
+
+
+
+
+
+    function imprimePrimos(num){
+    for (j=3; j<num; j++){
+         for (i=2; i<j; i++) {
+           if (j%i === 0) {
+            console.log( j + ' NO es primo' );
+               }
+             //  console.log(j+' '+ i +' '+ j%i+' '+ k);
+             //     k++; 
+             //  if ((j%i !== 0) && (k=j-2)) {
+             //   
+             //   console.log( j + ' >>>>>>>>>>>>>> ES PRIMO!);
+            }
+           } 
+        }
+      }
+
+      
+   
+     
