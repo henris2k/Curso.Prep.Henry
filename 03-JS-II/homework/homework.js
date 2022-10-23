@@ -149,39 +149,73 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 
-function esPrimo(numero) {
-  // Devuelve "true" si "numero" es primo
-  // De lo contrario devuelve "falso"
-  // Pista: un número primo solo es divisible por sí mismo y por 1
-  // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
-  // Test
-  if( numero < 2) return numero + '  no es primo';
-  if(numero === 2) return numero + '  es primo';
-  for(var i = 2; i < numero; i++) {
-    if(numero % i === 0) {
-      return numero + '  No es primo' ;
-    }
+/*bucle para recorrer un array
+  for (let i = 0; i < a.length; i++) {
+  if (a[i] === theValue) {
+    break;
   }
-  return numero + '  ES PRIMO';
+*/
+
+
+function numerosPrimoshasta(num) {
+   //let r = 1;
+  for (i=num;i>2;i--){ 
+    let r=1;
+    for (j=i-1;j>2;j--) { 
+     r=r*(i%j);
+  //    console.log(i+" "+j+" "+(i%j)+" "+r);
+  //    var r=r*(i%j);
+  //    console.log(r);
+    if (r === 0){
+        console.log(i + "  NO es primo");
+    } 
+   //   if (r !== 0){
+   //     console.log(i + " >>>>>>>>>>>>> ES PRIMO"  );
+   //   }
+    //return;
+  //    if (r !==0) {
+  //      console.log( i + "  es primo");
+ }
+ //return;
+} 
+//return;
 }
-/*
-function esPrimo(j) {
+
+
+
+
+/* for (let i = num-1; i>2; i++) {
+  function esprimo(a){
+    for (let i = 2; i < a; i++) {
+  if (a%i === 0) {
+    console.log(" a NO ES PRIMO")
+    //break;
+  }
+    }
+  };
+  esprimo(a);
+}
+} 
+ 
+
+  
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   //var primo = 1																													
-  for (i=2; i<j; i++){
-    //console.log(j);
-   // console.log(j%i);
-    if (j%i===0) {
+  for (i=num; i>2; i--){
+  for (j=num-1; j>2; j--){
+      console.log(i%j);
+          if (i%j===0) {
       return  j + ' no es primo ';
     } else {
       return   j + ' es primo ';
     }
+    break;
   }
+}
 }
 
 function todosPrimos(num){
@@ -193,36 +227,7 @@ function todosPrimos(num){
 */
 
 
-/*
- function esPrimo(numero) {
-  //en realidad busco TODOS los numeros primos hasta #numero
-  // Devuelve "true" si "numero" es primo
-  // De lo contrario devuelve "falso"
-  // Pista: un número primo solo es divisible por sí mismo y por 1
-  // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
-  //var primo = 1		
-  //var numero = 0 + numero;
-  
-  //var j = 3;								
-  //var i	= 2;																	
-  
-  for (j=3 ; j<numero; j++) {
-    for (i=2; i<j ; i++)  {
 
-      console.log(j, i, j%i);
-      
-      if (j%i === 0) {
-        console.log(j + ' NO es primo');
-       // i=2;
-       // j++;
-                     }               
-
-                  }
-              }
-          }
- 
-*/
 
  
 
